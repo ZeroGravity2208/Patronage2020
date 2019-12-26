@@ -2,6 +2,7 @@
 
 function insert(num){
     document.form.textview.value = document.form.textview.value + num;
+    console.log("You press: ",num);
 }
 
 //funkcja dla "C" - kasuje całe wprowadzone wyrażenie
@@ -9,6 +10,8 @@ function insert(num){
 function cancel(){
 
     document.form.textview.value = "";
+    console.log("Clear ");
+
 }
 
 //funcja "CE" - pozwala na wprowadzenie cyfry od nowa(-1 cyfra dla calego stringa)
@@ -27,4 +30,6 @@ function equal(){
     if(exp){
         document.form.textview.value = eval(exp);
   }
+  console.log(exp, "=", eval(exp));
+  
 }
