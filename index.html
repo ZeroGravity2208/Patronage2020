@@ -1,0 +1,103 @@
+<!-- Projekt zrobiony dla zadania nr 1 Intive Patronage2020 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9161ec733b.js" crossorigin="anonymous"></script>
+    <!-- Material Design for Bootstrap CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Patronage2020</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand" href="#">
+            <img src="assets/brand/download.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Patronage2020
+          </a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+      <section class="text-1">
+        <h1>Calculator for Patronage2020</h1>
+      </section>
+    <div id="wrap">
+        <div id="main" class="container-1 clear-top">
+    
+      <div class="container-2">
+        <div class="item input"><form name="form"><input type="text" name="textview" readonly></form></div>
+        <div id = "1" class="item clean" onclick="cancel()">C</div>
+        <!-- CE -->
+        <div id = "2" class="item CE" onclick="backspace()"><i class="fas fa-arrow-left"></i></div>
+        <!---->
+        <div class="item" onclick="insert('+')"><i class="fas fa-plus"></i></div>
+        <div class="item" onclick="insert('-')"><i class="fas fa-minus"></i></div>
+        <div class="item" onclick="insert('*')"><i class="fas fa-times"></i></div>
+        <div class="item" onclick="insert('/')"><i class="fas fa-divide"></i></div>
+        <div class="item" onclick="insert('7')">7</div>
+        <div class="item" onclick="insert('8')">8</div>
+        <div class="item" onclick="insert('9')">9</div>
+        <div class="item" onclick="insert('(')">(</div>
+        <div class="item" onclick="insert('4')">4</div>
+        <div class="item" onclick="insert('5')">5</div>
+        <div class="item" onclick="insert('6')">6</div>
+        <div class="item" onclick="insert(')')">)</div>
+        <div class="item" onclick="insert('1')">1</div>
+        <div class="item" onclick="insert('2')">2</div>
+        <div class="item" onclick="insert('3')">3</div>
+        <div class="item equal" onclick="equal()"><i class="fas fa-equals"></i></div>
+        <div class="item bullet" onclick="insert('.')">.</div>
+        <div class="item" onclick="insert('0')">0</div>
+        
+
+      </div>
+
+</div>
+</div>
+    
+        <footer class="py-4 bg-dark text-center text-white-50">
+            <div class="container-3">
+  
+                <!-- Social buttons -->
+                <ul class="list-unstyled list-inline text-center">
+                  <li class="list-inline-item">
+                      <button type="button" class="btn btn-brand btn-facebook">
+                          <a href="https://www.facebook.com/profile.php?id=100010621604936"><i class="fab fa-facebook-square"></i>Facebook</a>
+                        </button>
+                  </li>
+                  <li class="list-inline-item">
+                      <button type="button" class="btn btn-brand btn-linkedin">
+                          <a href="https://www.linkedin.com/in/nazarii-diadyk-a43ba4144/"><i class="fab fa-linkedin"></i>Linkedin</a>
+                        </button>
+                  </li>
+                  <li class="list-inline-item">
+                      <button type="button" class="btn btn-brand btn-instagram">
+                          <a href="https://www.instagram.com/_nazarii.d/"><i class="fab fa-instagram"></i>Instagram</a>
+                        </button>
+                  </li>
+                </ul>
+                
+            
+              </div>
+                <a href="https://github.com/ZeroGravity2208/Patronage2020">Copyright &copy; Github/Patronage2020</a>
+              
+        </footer>
+      <!-- Footer -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+  </body>
+</html>
